@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+circle {
+    fill: steelblue;
+}
+
+text {
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
