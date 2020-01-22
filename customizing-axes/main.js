@@ -3,10 +3,6 @@ const svg = d3.select('svg');
 const width = +svg.attr('width'); // same as parseFloat(svg.attr('width'))
 const height = +svg.attr('height'); // same as parseFloat(svg.attr('height'))
 
-// d3.csv('url to my github account').then(data => {
-//     console.log(data);
-// })
-
 let data = [
     {country: 'China', population: 1415046},
     {country: 'India', population: 1354052},
