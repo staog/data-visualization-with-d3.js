@@ -3,9 +3,13 @@ const svg = d3.select('svg');
 const width = +svg.attr('width'); // same as parseFloat(svg.attr('width'))
 const height = +svg.attr('height'); // same as parseFloat(svg.attr('height'))
 
-// d3.csv('url to my github account').then(data => {
-//     console.log(data);
-// })
+/*
+
+d3.csv('url to my github account').then(data => {
+   console.log(data);
+});
+
+*/
 
 let data = [
     {country: 'China', population: 1415046},
@@ -28,6 +32,8 @@ we would convert it to number like this:
 data.forEach(d => {
     d.population = +d.population;
 })
+
+It is the same as parseFloat(d.population);
 
 */
 
@@ -71,7 +77,8 @@ const render = input => {
       .selectAll('.domain')
         .remove();
 
-    g.append('g').call(xAxis)
+    g.append('g')
+      .call(xAxis)
       .attr('transform', `translate(0, ${innerHeight})`);
 
     g.selectAll('circle').data(input)
