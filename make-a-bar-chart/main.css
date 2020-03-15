@@ -10,3 +10,11 @@ rect {
 text {
     font-size: 1.3em;
 }
+
+.tick text {
+    font-size: 2.7em;
+    fill: #635f5d;
+}
+
+.tick line {
+    stroke: #c0c0bb;
